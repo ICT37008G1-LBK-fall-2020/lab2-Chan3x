@@ -7,5 +7,20 @@
   </head>
   <body>
     <!-- page content -->
+    <script>
+      var simpleNumbs = []
+      var divids = 0
+      for (var i = 2; i < 20; i += 2) {
+          for (var a = 1; a == i; a++) {
+            if (i % a == 0) {
+              divids ++
+             }
+        }
+        if(divids < 3) {
+            simpleNumbs = [...simpleNumbs, i]
+          }
+      }
+       alert(simpleNumbs)
+    </script>
   </body>
 </html>
